@@ -1,5 +1,12 @@
+import { Button, Tooltip } from '@mantine/core'
 import './App.css'
 
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  return (
+    <div className="flex justify-center items-center min-h-screen">
+      <Tooltip label="Tooltip">
+        <Button>mantine</Button>
+      </Tooltip>
+    </div>
+  )
 }
